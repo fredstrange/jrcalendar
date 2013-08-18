@@ -1,0 +1,66 @@
+/*div#contentcenter{height:500px}*/
+
+.jrcal{background-color:#ddd;}
+
+.jrcal .jrcal-month{border-left:1px solid #9388a1;border-right:1px solid #9388a1;border-bottom:1px solid #9388a1;	}
+.jrcal .jrcal-month.jrcal-first{border:0;}
+/*.jrcal .jrcal-month.jrcal-end{border-right:1px solid #9388a1;}*/
+.jrcal .jrcal-day.jrcal-top{border-top:1px solid #9388a1;}
+.jrcal .jrcal-day.jrcal-bottom{border-bottom:1px solid #9388a1;}
+#calmain{border:1px solid #9388a1;background-color:#f5f5f5;}
+
+.jrcal .jrcal-day{color:#575147;line-height:16px;height:16px;}
+.jrcal .jrcal-day.odd{background-color:#fff;}
+.jrcal .jrcal-day.even{background-color:#ddd;}
+.jrcal .jrcal-day.performance-confirmed{background-color:#d8ffe2;}
+.jrcal .jrcal-day.performance-preliminary{background-color:#fbf0b5;}
+.jrcal .jrcal-day.performance-canceled{background-color:#fc4d4d;}
+.jrcal .jrcal-day.performance-cancelled{background-color:#fc4d4d;}
+.jrcal .jrcal-day.performance-request{background-color:#4d9ffc;}
+.jrcal .jrcal-day.event-absence, .jrcal .jrcal-day.event-vacation{background-color:#817987;}
+.jrcal .jrcal-day.event-rehearsal{background-color:#d8deff;}
+.jrcal .jrcal-day.event-public-appearance{background-color:#ffd8fc;}
+.jrcal .jrcal-day.event-travel{background-color:#ffdfd8;}
+.jrcal .jrcal-day.event-comment{background-color:#e9ffd8;}
+.jrcal .jrcal-emptyday{background-color:#f5f5f5;}
+
+.jrcal .jrcal-date{font-size:14px;width:19px}
+.jrcal .jrcal-weekday{font-size:10px;width:25px}
+.jrcal .jrcal-weekday.jrcal-holiday{color:#b50606;}
+.jrcal .jrcal-weeknum{font-size:14px;line-height:16px;text-align:center;background-color:#DFEEFF;margin:0;padding:0;}
+
+.jrcal .jrcal-double .jrcal-date, .jrcal .jrcal-double .jrcal-weekday {display:none}
+.jrcal .jrcal-double .jrcal-events {padding-left:44px;}
+.jrcal .jrcal-event{display:block;cursor:pointer;position:relative;	overflow:hidden;border:1px solid #9388a1;background-color:#fff;-moz-border-radius: 2em;-webkit-border-radius: 2em;border-radius: 2em;float:left;max-width:126px;}
+.jrcal .jrcal-event p{font-size:10px;height:14px;margin:0;padding:0 7px;position:relative;top:-2px;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-o-user-select: none;user-select: none;}
+.jrcal .jrcal-events{font-size:10px;}
+
+#calmain{width:868px;position:relative;}	
+#topinnerthin{position:relative;}
+#month-header-wrapper{position:relative;top:-2px;margin-left:204px}
+.jrcal-monthheader{text-align:center;-moz-border-radius: 5px 5px 0 0;border-radius: 5px 5px 0 0;border:1px solid #877E72;background-color:#C5BDB2;}
+
+.jrcal.fourmonths .jrcal-events{width:172px;display:block;}
+.jrcal.fourmonths .jrcal-emptyday{width:216px;height:3px}
+.jrcal.fourmonths .jrcal-weeknum{width:216px;}
+.fourmonths .jrcal-monthheader{width:216px;}
+.jrcal.fourmonths .jrcal-event{max-width:126px}
+
+
+.jrcal.threemonths .jrcal-events{width:244px;display:block;}
+.jrcal.threemonths .jrcal-emptyday{width:288px;height:3px}
+.jrcal.threemonths .jrcal-weeknum{width:288px;}
+.threemonths .jrcal-monthheader{width:288px;}
+.jrcal.threemonths .jrcal-event{max-width:210px}
+
+.jrcal .jrcal-commenticon{background-image:url('../img/jrcalendar/info.png');width:16px;height:16px;}
+.jrcal .jrcal-newevent{background-image:url('../img/jrcalendar/add.png');width:16px;height:16px;}
+.jrcal .jrcal-block{background-image:url('../img/jrcalendar/block.png');width:16px;height:16px;}
+.jrcal .jrcal-newperformance{background-image:url('../img/jrcalendar/note.png');width:16px;height:16px;}
+
+.jrcal .jrcal-tooltip{background:#d4cfc8;border:1px solid #000;}
+
+/* Header   */
+
+#project_header{float:left;}
+#project_header p{font-size:20px;font-weight:bold;margin:16px 15px;}
