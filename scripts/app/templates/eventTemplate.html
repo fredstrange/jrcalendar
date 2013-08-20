@@ -1,0 +1,22 @@
+<div id="form_modal">
+	<div id="modal-content">
+
+		{{view.day.date}}
+		<form>
+			<fieldset>
+				<div>
+					<label {{bindAttr for="titleField.elementId"}}>Title</label>
+					{{view Ember.TextField valueBinding='title' name='title' viewName='titleField'}}
+				</div>
+				<div>
+					<label {{bindAttr for='descriptionField.elementId'}}>Description</label>
+					{{view Ember.TextField descriptionBinding='description' name='description' viewName='descriptionField'}}
+				</div>
+
+					<a href='#' {{action save}} class='btn btn-success'>Create</a>
+				</fieldset>
+			</form>
+			<a href='#' {{action closeModal view}} class='btn btn-inverse'>Cancel</a>
+	</div>
+
+</div>

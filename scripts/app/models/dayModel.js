@@ -57,6 +57,10 @@ define([
       return this.get('date') == new Date(this.get('year'), this.get('month'), 0).getDate();
     }.property('date'),
 
+    isOdd: function(){
+      return this.get('date') % 2 !== 0;
+    }.property('date'),
+
     /* Return the model as a Javascript date object.*/
     jsDate: function(){
       return new Date(this.get('year'), this.get('month') - 1, this.get('date'));

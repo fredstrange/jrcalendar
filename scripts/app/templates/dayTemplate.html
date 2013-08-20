@@ -1,10 +1,10 @@
 <div class="row">
-	<div class="jrcal-day" {{bindAttr year="year" month="month" day="date"}} >
+	<div  {{bindAttr year="year" month="month" day="date" class=":jrcal-day isOdd:odd:even" }} >
 		<div class="col-md-1">
 			<div class="jrcal-date">{{date}}</div>
 		</div>
 		<div class="col-md-2">
-			<div {{ bindAttr class=":jrcal-weekday isHoliday:red " }}>{{weekday}}</div>
+			<div {{ bindAttr class=":jrcal-weekday isHoliday:red" }}>{{weekday}}</div>
 		</div>
 
 		<!--Holiday Tag-->
@@ -21,9 +21,9 @@
 		<div class="row">
 			<div class="jrcal-btns hidden">
 				<!--Button New Event-->
-				<div class="jrcal-newevent col-md-12"></div>
+				<div class="jrcal-newevent col-md-12" {{action newEvent this}}></div>
 				<!--Button New Performance-->
-				<div class="jrcal-newperformance col-md-12"></div>
+				<div class="jrcal-newperformance col-md-12" ></div>
 			</div>
 		</div>
 		<div class="clear"></div>

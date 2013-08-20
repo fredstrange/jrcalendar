@@ -11,7 +11,7 @@
 
 .jrcal .jrcal-day{color:#575147;line-height:16px;height:16px;}
 .jrcal .jrcal-day.odd{background-color:#fff;}
-.jrcal .jrcal-day.even{background-color:#ddd;}
+.jrcal .jrcal-day.even{background-color:#F1F1F1;}
 .jrcal .jrcal-day.performance-confirmed{background-color:#d8ffe2;}
 .jrcal .jrcal-day.performance-preliminary{background-color:#fbf0b5;}
 .jrcal .jrcal-day.performance-canceled{background-color:#fc4d4d;}
@@ -64,3 +64,5 @@
 
 #project_header{float:left;}
 #project_header p{font-size:20px;font-weight:bold;margin:16px 15px;}
+
+.jrcal-weekday.red{color:red }

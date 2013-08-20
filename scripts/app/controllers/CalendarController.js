@@ -1,4 +1,9 @@
-define(["ember", "models/dayModel"], function(Ember, DayModel){
+define(["ember", 
+	"models/dayModel", 
+	"views/EventView", 
+	"controllers/EventController" ], 
+	function(Ember, DayModel, EventView, EventController){
+
 	var CalendarController = Ember.ArrayController.extend({
 
 		currentYear: new Date().getFullYear(),
@@ -6,15 +11,11 @@ define(["ember", "models/dayModel"], function(Ember, DayModel){
 		numMonths: 3,
 		holidays: {},
 		calendar: [],
+		eventController: EventController.create(),
 
-		conTest: function(){
-			return "test";
-		},
-
-		init: function(){
-			this._super();
-			this.initYear();
-		},
+		/*
+		* Controller properties
+		*/
 
 		filteredMonths: function(){
 			var year, startMonth, numMonths, calendar, filteredArray;
@@ -39,6 +40,29 @@ define(["ember", "models/dayModel"], function(Ember, DayModel){
 			console.log(second);
 		}.property('startMonth'),
 
+		/*
+		*	Actions
+		*/
+
+		newEvent: function(day){
+			console.log('button clicked');
+			console.log(day.get('date'));
+
+			this.get('eventController').newEventModal(day, this);
+		},
+
+		/*
+		*	Internal functions. 
+		*/
+
+		init: function(){
+			this._super();
+			this.initYear();
+		},
+
+		/*
+		*	Methods associated with generating the Calendar
+		*/
 
 		initYear: function(year){
 			var day, dayModel, days, cal, year, holidays, lang;
