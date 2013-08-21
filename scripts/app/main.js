@@ -6,10 +6,13 @@ define([
 	"views/EventView",
 	"controllers/ApplicationController",
 	"controllers/CalendarController",
+	"controllers/EventController",
 	"app/router",
 	"routes/IndexRoute"
 	
-], function(ApplicationView, CalendarView, WeekView, DayView, EventView, ApplicationController, CalendarController, Router, IndexRoute){
+], function(ApplicationView, CalendarView, WeekView, DayView, EventView, 
+			ApplicationController, CalendarController, EventController,
+			Router, IndexRoute){
 	/*Module Pattern*/
 	var App = {
 		ApplicationView: ApplicationView,
@@ -18,6 +21,7 @@ define([
 		DayView: DayView,
 		EventView: EventView,
 		ApplicationController: ApplicationController,
+		EventController: EventController,
 		CalendarController: CalendarController,
 		Router: Router,
 		IndexRoute: IndexRoute

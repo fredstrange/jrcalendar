@@ -1,22 +1,28 @@
-<div id="form_modal">
-	<div id="modal-content">
-
-		{{view.day.date}}
-		<form>
-			<fieldset>
-				<div>
-					<label {{bindAttr for="titleField.elementId"}}>Title</label>
-					{{view Ember.TextField valueBinding='title' name='title' viewName='titleField'}}
-				</div>
-				<div>
-					<label {{bindAttr for='descriptionField.elementId'}}>Description</label>
-					{{view Ember.TextField descriptionBinding='description' name='description' viewName='descriptionField'}}
-				</div>
-
-					<a href='#' {{action save}} class='btn btn-success'>Create</a>
-				</fieldset>
-			</form>
-			<a href='#' {{action closeModal view}} class='btn btn-inverse'>Cancel</a>
-	</div>
-
-</div>
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Create new Event for {{view.day.monthName}} {{view.day.date}}</h4>
+    </div>
+    <div class="modal-body">
+      <form>
+		<fieldset>
+			<div>
+				<label class="modal-label" {{bindAttr for="titleField.elementId"}}>Title</label>
+				{{view Ember.TextField valueBinding='title' name='title' viewName='titleField' class='modal-input'}}
+			</div>
+			<div>
+				<label class="modal-label" {{bindAttr for='descriptionField.elementId'}}>Description</label>
+				{{view Ember.TextField descriptionBinding='description' name='description' viewName='descriptionField' class='modal-input'}}
+			</div>
+			</fieldset>
+		</form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" {{action closeModal}} >Close</button>
+      <button type="button" class="btn btn-primary" {{action saveEvent}} >Save changes</button>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

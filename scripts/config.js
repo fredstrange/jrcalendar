@@ -5,7 +5,10 @@ define({
 			deps: ['handlebars', 'jquery'],
 			exports: 'Ember'
 		},
-		'jqueryui:': {
+/*		'jquery-ui':: {
+            deps: ['jquery']
+        }*/
+        'bootstrap': {
             deps: ['jquery']
         }
 	},
@@ -19,7 +22,8 @@ define({
     	'helpers': 'app/helpers',
 		/*libs*/
 		'jquery': 'libs/jquery/1.9.1/jquery',
-		'jquery-ui': 'libs/jquery-ui/1.10.3/jquery-ui',
+	//	'jquery-ui': 'libs/jquery-ui/1.10.3/jquery-ui',
+		'bootstrap': 'libs/bootstrap/bootstrap',
 		'handlebars': 'libs/handlebars/1.0.rc.3/handlebars',
 		'ember': 'libs/ember/1.0.0-rc.3/ember',
 		/*requirejs-plugins*/

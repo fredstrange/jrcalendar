@@ -9,7 +9,7 @@
 .jrcal .jrcal-day.jrcal-bottom{border-bottom:1px solid #9388a1;}
 #calmain{border:1px solid #9388a1;background-color:#f5f5f5;}
 
-.jrcal .jrcal-day{color:#575147;line-height:16px;height:16px;}
+.jrcal .jrcal-day{color:#575147;line-height:16px;height:17px;}
 .jrcal .jrcal-day.odd{background-color:#fff;}
 .jrcal .jrcal-day.even{background-color:#F1F1F1;}
 .jrcal .jrcal-day.performance-confirmed{background-color:#d8ffe2;}
@@ -24,7 +24,7 @@
 .jrcal .jrcal-day.event-comment{background-color:#e9ffd8;}
 .jrcal .jrcal-emptyday{background-color:#f5f5f5;}
 
-.jrcal .jrcal-date{font-size:14px;width:19px}
+.jrcal .jrcal-date{font-size:14px;width:19px;float: left;margin-left:3px}
 .jrcal .jrcal-weekday{font-size:10px;width:25px}
 .jrcal .jrcal-weekday.jrcal-holiday{color:#b50606;}
 .jrcal .jrcal-weeknum{font-size:14px;line-height:16px;text-align:center;background-color:#DFEEFF;margin:0;padding:0;}
@@ -54,9 +54,9 @@
 .jrcal.threemonths .jrcal-event{max-width:210px}
 
 .jrcal .jrcal-commenticon{background-image:url('../img/jrcalendar/info.png');width:16px;height:16px;}
-.jrcal .jrcal-newevent{background-image:url('../img/jrcalendar/add.png');width:16px;height:16px;}
+.jrcal .jrcal-newevent{background-image:url('../img/jrcalendar/add.png'); background-repeat:no-repeat; width:16px;height:16px;float:right;}
 .jrcal .jrcal-block{background-image:url('../img/jrcalendar/block.png');width:16px;height:16px;}
-.jrcal .jrcal-newperformance{background-image:url('../img/jrcalendar/note.png');width:16px;height:16px;}
+.jrcal .jrcal-newperformance{background-image:url('../img/jrcalendar/note.png');background-repeat:no-repeat;width:16px;height:16px;float:right;}
 
 .jrcal .jrcal-tooltip{background:#d4cfc8;border:1px solid #000;}
 
@@ -66,3 +66,11 @@
 #project_header p{font-size:20px;font-weight:bold;margin:16px 15px;}
 
 .jrcal-weekday.red{color:red }
+
+.jrcal .jrcal-holidayname{font-size:8px;}
+.modal .modal-label{width:100px;}	
+.modal .modal-input{width:300px;}	
+
+@media (min-width: 1000px){
+	.jrcal .jrcal-holidayname{font-size:10px;}	
+}
