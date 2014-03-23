@@ -5,39 +5,26 @@ define({
 			deps: ['handlebars', 'jquery'],
 			exports: 'Ember'
 		},
-/*		'jquery-ui':: {
-            deps: ['jquery']
-        }*/
         'bootstrap': {
             deps: ['jquery']
         }
 	},
 	paths : {
-		'App': 'app/main',		
-		'models': 'app/models',
-		'views': 'app/views',
-		'controllers': 'app/controllers',
-    	'templates': 'app/templates',
-    	'routes': 'app/routes',
-    	'helpers': 'app/helpers',
+		'App'					: 'app/main',		
+		'models'				: 'app/models',
+		'views'					: 'app/views',
+		'controllers'			: 'app/controllers',
+    	'templates'				: 'app/templates',
+    	'routes'				: 'app/routes',
+    	'helpers'				: 'app/helpers',
 		/*libs*/
-		'jquery': 'libs/jquery/1.9.1/jquery',
-	//	'jquery-ui': 'libs/jquery-ui/1.10.3/jquery-ui',
-		'bootstrap': 'libs/bootstrap/bootstrap',
-		'handlebars': 'libs/handlebars/1.0.rc.3/handlebars',
-		'ember': 'libs/ember/1.0.0-rc.3/ember',
+		'jquery'				: '../bower_components/jquery/dist/jquery',
+		'bootstrap'				: '../bower_components/bootstrap/dist/js/bootstrap',
+		'handlebars'			: '../bower_components/handlebars/handlebars',
+		'ember'					: '../bower_components/ember/ember',
 		/*requirejs-plugins*/
-		'text': 'libs/requirejs-plugins/text',
-		'hbs': 'libs/requirejs-plugins/hbs',
-		'domReady': 'libs/requirejs-plugins/domReady',
-
-		/*James' libraries*/
-		'jrcalendar': 'libs/jrcalendar/jrcalendar'
-	},
-	/*hbs plugin options*/
-	hbs: {
-		disableI18n: true,
-		templateExtension: "html"
+		'text'					: '../bower_components/text/text',
+		'domReady'				: '../bower_components/domReady/ready',
 	}
 
 }); 

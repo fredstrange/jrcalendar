@@ -1,9 +1,8 @@
 define([
   "require",
   "ember",
-  "controllers/dayController",
-  "jrcalendar"
-], function(require, Ember, dayController, jrcalendar){
+  "controllers/dayController"
+], function(require, Ember, dayController){
 
   function getDayController(){
     if(!dayController){

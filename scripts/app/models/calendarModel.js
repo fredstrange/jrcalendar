@@ -2,7 +2,7 @@ define([
   "require",
   "ember",
   "controllers/calendarController"
-], function(require, Ember, calendarController, jrcalendar){
+], function(require, Ember, calendarController){
 
   function getCaledarController(){
     if(!calendarController){
